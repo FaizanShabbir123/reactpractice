@@ -1,13 +1,80 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.Message {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.Message h1 {
+    margin-top: -10px;
+}
+  
+  .futura {
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+  }
+  
+  .brandon {
+    font-family: 'Brandon Grotesque Thin';
+  }
+  
+  .brandon-light {
+    font-family: 'Brandon Grotesque light';
+  }
+  
+  .brandon-medium {
+    font-family: 'Brandon Grotesque medium';
+  }
+  
+  
+  /* Best Sellers */
+  .Best_sellers .inner__wrapper .Cards_wrapper {
+    display: grid;
+    grid-gap: 1rem;
+  }
+  
+  @media (min-width: 550px) {
+    .Best_sellers .inner__wrapper .Cards_wrapper { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 900px) {
+    .Best_sellers .inner__wrapper .Cards_wrapper { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (min-width: 1100px) {
+    .Best_sellers .inner__wrapper .Cards_wrapper { grid-template-columns: repeat(4, 1fr); }
+  }
+  
+  .Best_sellers .inner__wrapper .Cards_wrapper .card {
+    display: flex;
+    flex: 1;
+  }
+
+/* Netflix_series */
+.Netflix_series .inner__wrapper .Cards_wrapper {
+    display: grid;
+    grid-gap: 1rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media (min-width: 550px) {
+    .Netflix_series .inner__wrapper .Cards_wrapper { grid-template-columns: repeat(2, 1fr); }
+    }
+@media (min-width: 900px) {
+    .Netflix_series .inner__wrapper .Cards_wrapper { grid-template-columns: repeat(3, 1fr); }
+    }
+@media (min-width: 1100px) {
+    .Netflix_series .inner__wrapper .Cards_wrapper { grid-template-columns: repeat(4, 1fr); }
+    }
+
+.Netflix_series .inner__wrapper .Cards_wrapper .card {
+    display: flex;
+    flex: 1;
+}
+
+.Netflix_series .inner__wrapper .Cards_wrapper .card .image img {
+    width: 100%;
+    height: 379px;
+    object-fit: cover;
 }
